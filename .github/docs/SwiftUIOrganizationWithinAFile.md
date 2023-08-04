@@ -1,0 +1,53 @@
+# SwiftUI's Organization Within a File
+
+- `properties` then `init` then `body`
+- Property Wrappers grouped together
+- Helper code inside an extension
+
+## Example:
+
+```swift
+struct SettingsView: View {
+    // First the properties.
+    // Property Wrappers grouped together
+    @AppStorage(AppStorageKeys.keyTwo) private var propertyTwo = 0.75
+    @AppStorage(AppStorageKeys.keyThree) private var propertyThree = 0.5
+    @StateObject private var object = DeviceObserver()
+    
+    // Then the init
+    init(
+        sliderValue: Binding<Double>, 
+        wasSessionPreviouslyRunning: Binding<Bool>,
+        settingsViewModel: SettingsViewModel
+    ) {
+        self._sliderValue = sliderValue
+        self._wasSessionPreviouslyRunning = wasSessionPreviouslyRunning
+        self.settingsViewModel = settingsViewModel
+    }
+    
+    // Then the body
+    var body: some View {
+        List {...}
+            .listStyle(.insetGrouped)
+    }
+}
+
+// The rest of the code in a private extension
+private extension SettingsView {
+    var something: Bool {
+        // Something
+    }
+
+    var object: Object {
+        // get object
+    }
+
+    func doSomething() {
+        // method
+    }
+
+    func summarize(_ models: [Model]) -> ModelSummary {
+        // method
+    }
+}
+```
