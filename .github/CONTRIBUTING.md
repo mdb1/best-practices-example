@@ -19,6 +19,7 @@ _Note: The sections and every sub-item on each section of this document are orde
   - [TODOs](docs/TODOs.md)
 - [SwiftUI Best Practices 📘](docs/SwiftUIBestPractices.md)
   - [Organization within a File](docs/SwiftUIOrganizationWithinAFile.md)
+  - [StateObject/ObservedObject](docs/StateVsObservedObjects.md)
   - [View/ViewModel](docs/ViewAndViewModel.md)
 - [Unit Testing 🧪](docs/UnitTesting.md)
 
