@@ -12,7 +12,7 @@
 
 ### Example
 ```swift
-@objc private func editButtonTapped(_ sender: UIButton) {
+func editButtonTapped(_ sender: UIButton) {
     // TODO: Add proper documentation in the contributing guidelines: [TICKET-URL]
 }
 ```
@@ -23,6 +23,7 @@ When you find something that could be improved but it's working correctly, add a
 Future-Improvement comments might or might not be accompanied by a Linear ticket.
 
 ### Example:
+
 ```swift
 // Future-Improvement: Convert sync method to async/await and add unit tests.
 ```

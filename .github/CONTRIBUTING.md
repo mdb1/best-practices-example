@@ -6,30 +6,38 @@ _Note: The sections and every sub-item on each section of this document are orde
 
 ## Best Practices
 
-- [Assets 🎨](docs/Assets.md)
-- [Dependencies 📦](docs/Dependencies.md)
-- [Localization 🎌](docs/Localization.md)
-- [Swift Best Practices 🦅](docs/SwiftBestPractices.md)
-  - [Access Control](docs/AccessControl.md)
-  - [Comments](docs/Comments.md)
-  - [Enums Decoding](docs/EnumsDecoding.md)
-  - [Extensions](docs/Extensions.md)
-  - [Imports](docs/Imports.md)
-  - [Organization within a File](docs/SwiftOrganizationWithinAFile.md)
-  - [TODOs](docs/TODOs.md)
-- [SwiftUI Best Practices 📘](docs/SwiftUIBestPractices.md)
-  - [Organization within a File](docs/SwiftUIOrganizationWithinAFile.md)
-  - [StateObject/ObservedObject](docs/StateVsObservedObjects.md)
-  - [View/ViewModel](docs/ViewAndViewModel.md)
-- [Unit Testing 🧪](docs/UnitTesting.md)
+- [Assets 🎨](docs/general/Assets.md)
+- [Dependencies 📦](docs/general/Dependencies.md)
+- [Localization 🎌](docs/general/Localization.md)
+- [Swift Best Practices 🦅](docs/general/swift/BestPractices.md)
+  - [Access Control](docs/general/swift/AccessControl.md)
+  - [Comments](docs/general/swift/Comments.md)
+  - [Enums Decoding](docs/general/swift/EnumsDecoding.md)
+  - [Extensions](docs/general/swift/Extensions.md)
+  - [Imports](docs/general/swift/Imports.md)
+  - [Organization within a File](docs/general/swift/OrganizationWithinAFile.md)
+  - [TODOs](docs/general/swift/TODOs.md)
+- [SwiftUI Best Practices 📘](docs/general/swift-ui/BestPractices.md)
+  - [Organization within a File](docs/general/swift-ui/OrganizationWithinAFile.md)
+  - [UI Scaling](docs/general/swift-ui/UIScaling.md)
+  - [StateObject/ObservedObject](docs/general/swift-ui/StateVsObservedObjects.md)
+  - [View/ViewModel](docs/general/swift-ui/ViewAndViewModel.md)
+- [Unit Testing 🧪](docs/general/testing/UnitTesting.md)
+  - [Testing Notification Center](docs/general/testing/NotificationCenter.md)
 
 ## Build Tools
 
-- [SwiftFormat](docs/SwiftFormat.md)
-- [SwiftLint](docs/SwiftLint.md)
-- [Xcode Templates](docs/XcodeTemplates.md)
+- [SwiftFormat](docs/build-tools/SwiftFormat.md)
+- [SwiftLint](docs/build-tools/SwiftLint.md)
+- [Typos](docs/build-tools/Typos.md)
+- [Xcode Templates](docs/build-tools/XcodeTemplates.md)
+
+## Developer Experience
+
+- [Improve Build Times](docs/dx/ImproveBuildTimes.md)
 
 ## Git
 
-- [Git Strategy](docs/GitStrategy.md)
-- [PR Conventions](docs/PRConventions.md)
+- [Change Log](docs/git/ChangeLog.md)
+- [Git Strategy](docs/git/Strategy.md)
+- [PR Conventions](docs/git/PRConventions.md)

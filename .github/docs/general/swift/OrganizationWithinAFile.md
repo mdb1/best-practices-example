@@ -6,19 +6,19 @@ A file should only contain one major type declaration. Other types are allowed i
 ### Key Considerations
 * Files are organized in the following order:
 	* Default header created by Xcode
-	* Import statements
+	* Import statements (sorted)
 	* Protocols that are associated primarily with the major type declaration of the file.
 	* The major type declaration of the file
 	* Nested type declarations
 	* Properties
-        * Public propertyWrappers
+      * Public propertyWrappers
 	    * Public properties
 	    * Internal propertyWrappers
         * Internal properties
 	    * Private properties
     * Initializer
     * Public Extensions
-    * Extension protocol conformances
+    * Extension protocol conformance
     * Internal Extensions
     * Private Extensions
 	
@@ -31,3 +31,42 @@ A file should only contain one major type declaration. Other types are allowed i
 
 ### How do we use MARK?
 We don't use MARK comments.
+
+### Example:
+
+```swift
+extension SomeView {
+    @MainActor
+    final class ViewModel: ObservableObject {
+        public var item: Item?
+        @Published var catModel: Cat
+
+        private let dependencies: Dependencies
+
+        init(
+            cat: CatModel,
+            dependencies: Dependencies = .default
+        ) {
+            // Init
+        }
+    }
+}
+
+extension SomeView.ViewModel: SomeProtocol {
+    // Protocol methods / properties
+}
+
+extension SomeView.ViewModel {
+    var shouldDisplayItem: Bool {
+        // code
+    }
+
+    func didTapOnAddMoreButton() {
+        // method
+    }
+}
+
+private extension SomeView.ViewModel {
+    // private computed properties / methods
+}
+```

@@ -8,13 +8,14 @@
 
 ```swift
 struct SettingsView: View {
-    // First the properties.
+    // 1. First the properties (ordered by access level).
+    var someInternalProperty: Int = 15
     // Property Wrappers grouped together
     @AppStorage(AppStorageKeys.keyTwo) private var propertyTwo = 0.75
     @AppStorage(AppStorageKeys.keyThree) private var propertyThree = 0.5
     @StateObject private var object = DeviceObserver()
     
-    // Then the init
+    // 2. Then the initializer.
     init(
         sliderValue: Binding<Double>, 
         wasSessionPreviouslyRunning: Binding<Bool>,
@@ -25,14 +26,14 @@ struct SettingsView: View {
         self.settingsViewModel = settingsViewModel
     }
     
-    // Then the body
+    // 3. Then the body.
     var body: some View {
         List {...}
             .listStyle(.insetGrouped)
     }
 }
 
-// The rest of the code in a private extension
+// 4. The rest of the code in a private extension.
 private extension SettingsView {
     var something: Bool {
         // Something
@@ -50,4 +51,6 @@ private extension SettingsView {
         // method
     }
 }
+
+/// Note: Previews should live in a different file with the `_Previews.swift` suffix.
 ```

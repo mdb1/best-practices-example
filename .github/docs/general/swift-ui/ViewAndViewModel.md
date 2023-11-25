@@ -5,7 +5,7 @@ To provide a consistent feeling across the app, we will use namespaces for the v
 ```swift
 // In DashboardView+ViewModel.swift
 extension DashboardView {
-    @MainActor 
+    @MainActor
     final class ViewModel: ObservableObject {
         // Properties/Initializers
     }
@@ -24,3 +24,8 @@ extension DashboardView.ViewModel {
 ## Dependencies in ViewModels 💉
 
 - [Documentation](https://mdb1.github.io/2023-02-03-enhancing-testability-without-protocols/)
+
+## General Guidelines
+
+- We mark the whole class as @MainActor instead of the specific methods.
+- We follow [these organization guide](./OrganizationWithinAFile.md)

@@ -80,7 +80,7 @@ var detailView: some View {
 }
 ```
 
-Instead do:
+Instead:
 
 ```swift
 var detailView: some View {
