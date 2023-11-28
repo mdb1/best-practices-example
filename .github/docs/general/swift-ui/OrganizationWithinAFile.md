@@ -1,10 +1,17 @@
 # SwiftUI's Organization Within a File
 
+**Table of Contents:**
+- [SwiftUI's Organization Within a File](#swiftuis-organization-within-a-file)
+  - [Organization](#organization)
+    - [Example:](#example)
+
+## Organization
+
 - `properties` then `init` then `body`
 - Property Wrappers grouped together
 - Helper code inside an extension
 
-## Example:
+### Example:
 
 ```swift
 struct SettingsView: View {

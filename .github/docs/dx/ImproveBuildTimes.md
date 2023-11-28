@@ -1,19 +1,31 @@
 # Build Times
 
-## Build with Timing Summary and Recent Build TimeLine:
+In this page, there are some tips and tricks to improve the build times of the app.
+
+**Table of Contents:**
+- [Build Times](#build-times)
+- [Build with Timing Summary and Recent Build TimeLine:](#build-with-timing-summary-and-recent-build-timeline)
+  - [1. Build with Timing Summary:](#1-build-with-timing-summary)
+  - [2. Recent Build TimeLine](#2-recent-build-timeline)
+- [Improve Compile Time in Xcode Projects:](#improve-compile-time-in-xcode-projects)
+- [Improve Compile Time in SPM Packages:](#improve-compile-time-in-spm-packages)
+- [SwiftLint Rules:](#swiftlint-rules)
+- [Additional Tips:](#additional-tips)
+
+# Build with Timing Summary and Recent Build TimeLine:
 
 Xcode provides two great tools to measure the compilation time:
 
-### 1. Build with Timing Summary: 
+## 1. Build with Timing Summary: 
 From the `Product` Menu -> Perform Action -> Build With Timing Summary:
   * _Note: For clean builds, remember to clean the build folder (`Command + Shift + K`) before performing the build._
   * Once the build finishes, select it from the `Report navigator`, select `Recent` and `All Messages` sub tabs, then scroll all the way down to check the report.
 
-### 2. Recent Build TimeLine
+## 2. Recent Build TimeLine
 
 The `Recent Build TimeLine` feature is quite handy for analyzing build times. To access it, select a recent build and go to `Editor -> Assistant`. This timeline view provides a visual representation of build processes and times, helping us identify areas that need optimization.
 
-## Improve Compile Time in Xcode Projects:
+# Improve Compile Time in Xcode Projects:
 
 The first step is to make Xcode display warnings in the code that takes too long to compile:
 
@@ -30,7 +42,7 @@ The first step is to make Xcode display warnings in the code that takes too long
 
 These flags enable warnings for long function bodies and expression type checking, allowing us to identify potential bottlenecks in our codebase.
 
-## Improve Compile Time in SPM Packages:
+# Improve Compile Time in SPM Packages:
 
 We can actually do the same For SPM packages, by applying the following `swiftSettings` to the target:
 
@@ -45,7 +57,7 @@ swiftSettings: [
 ]
 ```
 
-## SwiftLint Rules:
+# SwiftLint Rules:
 
 The [explicit_init](https://realm.github.io/SwiftLint/explicit_init.html) and [explicit_type_interface](https://realm.github.io/SwiftLint/explicit_type_interface.html) rules can indeed help streamline our code and potentially reduce build times. Ensuring clarity in our code's initialization and type interfaces can prevent unnecessary ambiguity that might slow down the build process.
 

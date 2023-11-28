@@ -1,9 +1,14 @@
 # Swift's Organization Within a File
 
-## How do we organize files?
 A file should only contain one major type declaration. Other types are allowed in support of the main type that is represented by the file, which typically shares the name of the file, e.g. `LoginViewController.swift` would have a major type of `LoginViewController`.
 
-### Key Considerations
+**Table of Contents:**
+- [Swift's Organization Within a File](#swifts-organization-within-a-file)
+  - [Key Considerations](#key-considerations)
+  - [How do we use MARK?](#how-do-we-use-mark)
+  - [Example:](#example)
+
+## Key Considerations
 * Files are organized in the following order:
 	* Default header created by Xcode
 	* Import statements (sorted)
@@ -29,10 +34,10 @@ A file should only contain one major type declaration. Other types are allowed i
   * First the computed properties
   * Then the methods
 
-### How do we use MARK?
+## How do we use MARK?
 We don't use MARK comments.
 
-### Example:
+## Example:
 
 ```swift
 extension SomeView {

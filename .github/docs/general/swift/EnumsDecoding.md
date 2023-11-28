@@ -1,5 +1,9 @@
 # Enums Decoding
 
+**Table of Contents:**
+- [Enums Decoding](#enums-decoding)
+  - [String enums Decoding 🔡](#string-enums-decoding-)
+
 ## String enums Decoding 🔡
 
 When working with String enums that have a finite number of cases, it's crucial to include an `unknown` case as a catch-all for potential future values. This practice helps future-proof our apps against updates or changes on the backend that may introduce new enum values.

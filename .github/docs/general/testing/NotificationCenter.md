@@ -1,5 +1,10 @@
 # Testing NotificationCenter: Concurrency vs Threading
 
+**Table of Contents:**
+- [Testing NotificationCenter: Concurrency vs Threading](#testing-notificationcenter-concurrency-vs-threading)
+  - [Synchronous Code](#synchronous-code)
+  - [Asynchronous Code](#asynchronous-code)
+
 ## Synchronous Code
 
 When we want to add unit tests to the NotificationCenter, and the code we want to test runs on a synchronous way:

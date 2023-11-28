@@ -4,7 +4,11 @@ For now, we will value unit-testing over every other form of tests. We should st
 
 In the future, we will discuss the introduction of other forms of testing (UI, Snapshot, Integration testing, etc).
 
-### Units related to date / currency / calendar formatting
+**Table of Contents:**
+- [Unit Testing Strategy 🧪](#unit-testing-strategy-)
+- [Units related to date / currency / calendar formatting](#units-related-to-date--currency--calendar-formatting)
+
+# Units related to date / currency / calendar formatting
 
 To ensure consistent execution of tests associated with date, currency, and calendar formatting across both the Continuous Integration (CI) environment and local development, it is necessary to provide the appropriate timezone, locale, and calendar references.
 

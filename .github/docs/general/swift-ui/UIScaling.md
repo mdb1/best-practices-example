@@ -4,6 +4,13 @@ We use @ScaledMetric to scale components / spacings / paddings / frames / etc.
 
 [ScaledMetric](https://developer.apple.com/documentation/swiftui/scaledmetric) is a dynamic property that scales a numeric value.
 
+**Table of Contents:**
+- [UIScaling](#uiscaling)
+  - [Usage](#usage)
+    - [1. Directly in the properties](#1-directly-in-the-properties)
+    - [2. As a scalar](#2-as-a-scalar)
+  - [Testing using Previews](#testing-using-previews)
+
 ## Usage
 
 ### 1. Directly in the properties

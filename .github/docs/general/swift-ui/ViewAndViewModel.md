@@ -1,5 +1,13 @@
 # View/ViewModel 🔗
 
+**Table of Contents:**
+- [View/ViewModel 🔗](#viewviewmodel-)
+  - [NameSpaces](#namespaces)
+  - [Dependencies in ViewModels 💉](#dependencies-in-viewmodels-)
+  - [General Guidelines](#general-guidelines)
+
+## NameSpaces
+
 To provide a consistent feeling across the app, we will use namespaces for the view models:
 
 ```swift

@@ -1,5 +1,14 @@
 # StateObject vs ObservedObject
 
+**Table of Contents:**
+- [StateObject vs ObservedObject](#stateobject-vs-observedobject)
+  - [@StateObject](#stateobject)
+    - [Examples:](#examples)
+  - [ObservedObject](#observedobject)
+    - [Examples:](#examples-1)
+  - [What not to do ❌](#what-not-to-do-)
+  - [Signs of Incorrect Usage](#signs-of-incorrect-usage)
+
 ## @StateObject
 * Ownership: Use `@StateObject` when the view owns the object. This is typically the root view or the view where the object is initially created.
 * Lifecycle: `@StateObject` ensures that the object will be de-initialized only when the view that owns it is removed from the hierarchy.

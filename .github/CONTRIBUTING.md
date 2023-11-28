@@ -4,6 +4,12 @@ This is a living document representing some guidelines that will help our team d
 
 _Note: The sections and every sub-item on each section of this document are ordered alphabetically. When editing, please take some time to maintain this convention 🤖_
 
+- [Contributing](#contributing)
+  - [Best Practices](#best-practices)
+  - [Build Tools](#build-tools)
+  - [Developer Experience](#developer-experience)
+  - [Git](#git)
+
 ## Best Practices
 
 - [Assets 🎨](docs/general/Assets.md)
@@ -19,8 +25,8 @@ _Note: The sections and every sub-item on each section of this document are orde
   - [TODOs](docs/general/swift/TODOs.md)
 - [SwiftUI Best Practices 📘](docs/general/swift-ui/BestPractices.md)
   - [Organization within a File](docs/general/swift-ui/OrganizationWithinAFile.md)
-  - [UI Scaling](docs/general/swift-ui/UIScaling.md)
   - [StateObject/ObservedObject](docs/general/swift-ui/StateVsObservedObjects.md)
+  - [UI Scaling](docs/general/swift-ui/UIScaling.md)
   - [View/ViewModel](docs/general/swift-ui/ViewAndViewModel.md)
 - [Unit Testing 🧪](docs/general/testing/UnitTesting.md)
   - [Testing Notification Center](docs/general/testing/NotificationCenter.md)

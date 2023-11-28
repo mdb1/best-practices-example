@@ -1,13 +1,18 @@
 # Localization
 
-## How do we use it?
 We use the localization tools and APIs provided by Apple, e.g. `NSLocalizedString`.
 
-## .localized vs .moduleLocalized
+**Table of Contents:**
+- [Localization](#localization)
+- [.localized vs .moduleLocalized](#localized-vs-modulelocalized)
+- [Localizable Keys](#localizable-keys)
+- [Code to Localize](#code-to-localize)
+
+# .localized vs .moduleLocalized
 We use .localized for strings that are defined in the app's main Localizable file.
 We use .moduleLocalized for strings defined in a module's Localizable file.
 
-## Localizable Keys
+# Localizable Keys
 
 We use the following rules:
 
@@ -33,7 +38,7 @@ var text: String {
 "Hello Manu"
 ```
 
-## Code to Localize
+# Code to Localize
 
 ```swift
 extension String {

@@ -2,13 +2,11 @@
 
 Follow Swift's [API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/) whenever possible.
 
-- Types start with uppercased letters. Functions, variables, and enums start with lowercased letters.
-- Default to `struct` unless you need a class-only feature.
-- Mark classes as `final` unless you want inheritance.
-- Use `guard` to exit functions early.
-- Avoid `self.` whenever possible.
+**Table of Contents:**
+- [Swift Best Practices 🦅](#swift-best-practices-)
+- [DateFormatters](#dateformatters)
 
-## DateFormatters
+# DateFormatters
 
 When employing date formatters, it is advisable to provide the formatter's influencing parameters as injectable inputs, rather than injecting the entire formatter itself. This approach enhances our ability to construct effective unit tests for the corresponding code.
 
