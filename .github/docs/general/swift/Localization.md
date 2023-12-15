@@ -31,7 +31,7 @@ var text: String {
     "Greet$1".localized(with: [user.name])
 }
 
-// Localizeble file:
+// Localizable file:
 "Greet$1" = "Hello %@";
 
 // Result:

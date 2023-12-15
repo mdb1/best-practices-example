@@ -14,7 +14,7 @@ _Note: The sections and every sub-item on each section of this document are orde
 
 - [Assets 🎨](docs/general/Assets.md)
 - [Dependencies 📦](docs/general/Dependencies.md)
-- [Localization 🎌](docs/general/Localization.md)
+- [Localization 🎌](docs/general/swift/Localization.md)
 - [Swift Best Practices 🦅](docs/general/swift/BestPractices.md)
   - [Access Control](docs/general/swift/AccessControl.md)
   - [Comments](docs/general/swift/Comments.md)
